@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family:"Roboto", sans-serif !important;
+}
+  
+
+#titolo{
+  padding-top: 0px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#titolo .fototitolo{
+  width: 250px;
+}
+
+.card{
+  width: 80%;
+  max-width: 470px;
+  background: #E0EAFC;  
+  background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);  
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 30px !important;
+  padding-top: 34px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align:center;
+  
+}
+
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  background: #a9afd0;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.search button{
+  border: 0;
+  outline: 0;
+  background:rgb(70, 150, 241);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*icona lente*/
+.search button i {
+  font-size: 18px;
+}
+
+/*iconameteo*/
+.weather-icon{
+  width: 160px;
+  margin-top: 60px;
+}
+
+
+/*temperatura*/
+.weather h1{
+  margin-top: 20px !important;
+  font-size: 70px;
+  font-weight: 500;
+  
+}
+/*cittasegnata*/
+.weather h2{
+  font-size: 40px;
+  font-weight: 400;
+ 
+}
+
+/*riquadro delle min-max temp*/
+.details{
+  margin-top: 80px;
+}
+
+.details .container .row {
+  display: flex;
+  gap: 90px; 
+
+}
+.temp-container {
+  display: flex;
+  align-items: center;  
+}
+/*icona termometro*/
+.temp-container i {
+  margin-right: 10px; 
+  font-size: 30px;
+
+}
+
+/*temperature affianco al icona*/
+.temp-container p {
+  margin: 0; 
+}
+
+/*titoli min/max/tem*/
+.temptitle{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/*numero temp min*/
+.min-temp{
+  
+  font-size: 34px !important;
+  font-weight: 600;
+
+}
+
+.max-temp{
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.weather{
+  display: none;
+}
+
+.error{
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+
+
+.banner{
+width: 100%;
+}
+
+video{
+width:100%;
+position: absolute;
+ 
+}
+
+@media (min-aspect-ratio: 16/9){
+  video{
+    width: 100%;
+    height:fit-content;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px){
+
+  video{
+    height: 100%; 
+    object-fit: cover; 
+    width: 100%;
+    
+  }
+  .banner{
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden; 
+  
+
+  }
+ .search{
+    width: 100%;
+  }
+
+  #titolo .fototitolo{
+    width: 200px;
+  }
+  
+  .card{
+    margin-top: 80px;
+    width: 80%;
+    display: flex;
+    border-radius: 20px !important;
+    
+    
+    
+    
+    
+   }
+  
+  
+  .search input{
+    width: 130px;
+    height: 40px;
+   }
+  
+  .search button{
+    width: 40px;
+    height: 40px;
+    }
+  
+  .search button i {
+    font-size: 16px;
+  }
+
+  .weather-icon{
+    width: 150px;
+  }
+
+  .weather h1{
+    margin-top: 20px;
+    font-size: 42px;
+    font-weight: 500;
+  }
+  .weather h2{
+    font-size: 38px;
+    font-weight: 400;
+   
+  }
+  .details{
+    padding-top: 70px !important;
+    margin: 0;
+    
+    
+ }
+
+ .weather{
+ 
+  /*background-color: red;*/
+  width: 326px;
+ }
+
+ #row1{
+ 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+ }
+
+ #row1 .col{
+  width: 109px !important;
+  
+  }
+
+ .temptitle{
+  font-size: 18px;
+  font-weight: 500;
+ }
+ 
+ #row2 .col{
+  width: 90px;
+  display: flex;
+  justify-content:center;
+  margin-top:-10px;
+ 
+  
+ }
+
+ .min-temp{
+  font-size: 24px !important;
+ }
+ .max-temp{
+  font-size: 24px !important;
+ }
+
+ .details .container .row {
+  display: flex;
+  gap: 20px;
+
+}
+.temp-container i {
+  margin-right: 5px; 
+  font-size: 22px;
+   
+}
+  .error{
+    font-size: 18px;
+   
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .card{
+   margin-top: 90px;
+  }
+
+  
+}
